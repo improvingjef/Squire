@@ -13,7 +13,16 @@ title: Round Table Craftsmen
       <span class="small">by <a href="http://github.com/roundtable">Round Table Craftsmen</a></span></h1>
 
     <div class="description">
-      A sequence of unit tests meant to test and reinforce the basic understanding of C# and the .NET Framework
+      <p>Squire is a set of unit tests which are created to allow someone who is just learning .NET repetitively run through the various exercises as a drill to reinforce syntax and aid in memorization of key methods and abilities. The library is still developing, and more practices will be generated over time.</p>
+			<h2>Suggested Use - Mentor</h2>
+			<p>I recommend that the mentor fork Squire and then review the various Kihon practices within. Set any of the classes you don't want your students working on as Ignore by adding the [Ignore] attribute to the test. Once you've done this, commit the changes back to your repository and have your students fork from your version.</p>
+			<h2>Suggested Use - Apprentice</h2>
+			<p>Once you've forked a copy from your mentor, clone it to your local box and then create a branch. In the branch your job is to make all the unit tests pass. Open up one of the Kihon.cs files in the solution, and provided that it is not marked Ignore replace the:</p>
+			<pre class="brush: csharp">
+			throw new NotImplementedException();
+			</pre>
+			<p>with the actual solution to the problem. In most cases the method description alone should be sufficient to describe the desired work, but if it is not then there should be a comment to explain.</p>			
+			<p>The reason to branch each time you run the test is that it ensures you can always easily get updates from your mentor when he changes the Kihons you should be working over time.</p>
     </div>
 
     <h2>Authors</h2>
