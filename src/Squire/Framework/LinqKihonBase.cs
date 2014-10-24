@@ -64,8 +64,8 @@ namespace Squire.Framework
             IEnumerable<Product> item = Order_the_list_by_the_something_property(list);
 
             //assert
-            Assert.AreEqual(list[0], item.FirstOrDefault());
-            Assert.AreEqual(list[1], item.LastOrDefault());
+            Assert.AreEqual(list[1], item.FirstOrDefault());
+            Assert.AreEqual(list[0], item.LastOrDefault());
         }
 
 
@@ -86,8 +86,8 @@ namespace Squire.Framework
             IEnumerable<Product> item = Order_the_list_by_the_something_property_descending(list);
 
             //assert
-            Assert.AreEqual(list[1], item.FirstOrDefault());
-            Assert.AreEqual(list[0], item.LastOrDefault());
+            Assert.AreEqual(list[0], item.FirstOrDefault());
+            Assert.AreEqual(list[1], item.LastOrDefault());
         }
 
         protected abstract IEnumerable<Product> Order_the_list_by_the_something_property_descending(List<Product> list);

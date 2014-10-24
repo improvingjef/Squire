@@ -6,9 +6,9 @@ namespace Squire
 
     public class TypeConversionKihon : TypeConversionKihonBase
     {
-        protected override int Convert_String_To_Int(int data)
+        protected override int Convert_String_To_Int(string data)
         {
-            throw new NotImplementedException();
+            return Convert.ToInt32(data);
         }
     }
 }

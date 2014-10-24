@@ -11,22 +11,22 @@ namespace Squire
     {
         protected override IEnumerable<int> Select_the_Something_property_from_list(List<Product> list)
         {
-            throw new NotImplementedException();
+            return list.Select(l => l.Something);
         }
 
         protected override IEnumerable<Product> Order_the_list_by_the_something_property_descending(List<Product> list)
         {
-            throw new NotImplementedException();
+            return list.OrderByDescending(l => l.Something);
         }
 
         protected override IEnumerable<Product> Order_the_list_by_the_something_property(List<Product> list)
         {
-            throw new NotImplementedException();
+            return list.OrderBy(l => l.Something);
         }
 
         protected override IEnumerable<Product> Filter_the_products_where_something_is_equal_to_2_from_list(List<Product> list)
         {
-            throw new NotImplementedException();
+            return list.Where(l => l.Something == 2);
         }
     }
 }

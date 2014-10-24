@@ -2,10 +2,10 @@ namespace Squire.Framework
 {
     using NUnit.Framework;
 
-    //[TestFixture]
+    [TestFixture]
     public abstract class TypeConversionKihonBase : BaseKihon
     {
-        //[Test]
+        [Test]
         public void Convert_String_To_Int()
         {
             // Arrange
@@ -13,9 +13,10 @@ namespace Squire.Framework
             // Act
 
             // Assert
+            Assert.AreEqual(1, Convert_String_To_Int("1"));
         }
 
-        protected abstract int Convert_String_To_Int(int data);
+        protected abstract int Convert_String_To_Int(string data);
 
     }
 }
