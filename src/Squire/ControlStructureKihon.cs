@@ -14,27 +14,40 @@ namespace Squire
          */
         protected override void Call_Hit_On_a_If_val_Is_True_Else_Call_Hit_On_b(bool val, ITarget a, ITarget b)
         {
-            throw new NotImplementedException();
+            if(val)
+            {
+                a.Hit();
+            }
+            else
+            {
+                b.Hit();
+            }
         }
 
         protected override void Call_Hit_On_a_Once_For_Each_Member_Of_list(ITarget a, List<string> list)
         {
-            throw new NotImplementedException();
+            foreach (var item in list)
+                a.Hit();
         }
 
         protected override void Call_Hit_On_a_While_a_IsValid_Is_True(ITarget a)
         {
-            throw new NotImplementedException();
+            while (a.IsValid)
+                a.Hit();
         }
 
         protected override void n_Times_Call_Hit_On_a(int n, ITarget a)
         {
-            throw new NotImplementedException();
+            for (int i = 0; i < n; i++)
+                a.Hit();
         }
 
         protected override void Call_Hit_On_a_Once_And_Loop_Until_IsValid_Is_False(ITarget a)
         {
-            throw new NotImplementedException();
+            do
+            {
+                a.Hit();
+            } while (a.IsValid);
         }
     }
 }
