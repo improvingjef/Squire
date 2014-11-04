@@ -37,6 +37,9 @@ namespace Squire
         {
             return @"SELECT * FROM Person
                     JOIN Address on Person.PersonId = Address.PersonId";
+
+            return @"SELECT * FROM Person P
+                    JOIN Address A on P.PersonId = A.PersonId";
         }
 
         protected override string Select_FirstName_From_Person_Where_LastName_Equals_Rayburn()
@@ -48,6 +51,9 @@ namespace Squire
         {
             return @"SELECT * FROM Person
                 LEFT OUTER JOIN Address on Person.PersonId = Address.PersonId";
+
+            return @"SELECT * FROM Person P
+                LEFT OUTER JOIN Address A on P.PersonId = A.PersonId";
         }
 
         protected override string Insert_PersonId_4_Named_Mike_Johnson_Age_5_To_Person()
