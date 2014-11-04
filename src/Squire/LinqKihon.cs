@@ -28,5 +28,10 @@ namespace Squire
         {
             return list.Where(l => l.Something == 2);
         }
+
+        protected override IEnumerable<string> Flatten_the_children_into_a_single_file_line_and_return_their_names_in_alphabetical_order(List<Parent> parents)
+        {
+            return parents.SelectMany(p => p.Children.Select(c => c.Name)).OrderBy(s=>s);
+        }
     }
 }

@@ -114,7 +114,7 @@
     <Compile Include="ConsoleKihon.cs" />
     <Compile Include="ControlStructureKihon.cs" />
     <Compile Include="DelegatesKihon.cs" />
-    <Compile Include="DelegatesKihonBase.cs" />
+    <Compile Include="Framework\DelegatesKihonBase.cs" />
     <Compile Include="Framework\Abstractions\IConsoleWrapper.cs" />
     <Compile Include="Framework\BaseDataKihon.cs" />
     <Compile Include="Framework\BaseKihon.cs" />
